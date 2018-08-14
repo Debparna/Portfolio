@@ -1,3 +1,5 @@
+/*2EC1BF*/
+
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
 body {
 	font-family: 'Raleway', sans-serif;
@@ -5,6 +7,10 @@ body {
 	font-weight: 400;
 	overflow-y: scroll;
 	-webkit-font-smoothing: antialiased;
+}
+
+.pp {
+	padding-top: 10%;
 }
 
 ::selection {
@@ -27,12 +33,16 @@ p {
 
 a {
 	text-decoration: none;
+	color: black;
 	-webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
-	border-bottom: 1px solid #dedede;
+}
+
+a:hover {
+	color: #2EC1BF;
 }
 
 a:focus {
@@ -99,6 +109,11 @@ PRELOADER
 		-webkit-transform: scale(1.0);
 		opacity: 0;
 	}
+}
+
+.links {
+	text-decoration: none;
+	color: black;
 }
 
 
@@ -280,7 +295,7 @@ header li {
 }
 
 header li > a {
-	font-size: 13px;
+	font-size: 15px;
 	color: #c3c3c3;
 	padding-right: 25px;
 	padding-left: 25px;
@@ -383,8 +398,7 @@ CONTENT
 }
 
 .content .text-intro p {
-	font-size: 13px;
-	color: #8d8d8d;
+	font-size: 16px;
 	margin-top: 30px;
 	font-weight: 400;
 	line-height: 22px;
@@ -598,12 +612,10 @@ li.grid-item img {
 	width: 360px;
 }
 
-
 footer {
-	position: absolute;
-    bottom: 0;
-    width: 100%;
-	background-color: #fcfcfc;
+	bottom: 0;
+	width: 100%;
+	background-color: #F5F5F5;
 	padding: 28px 70px;
 	font-size: .75em;
 	display: flex;
@@ -620,7 +632,6 @@ footer {
 		text-align: right
 	}
 }
-
 
 
 /*
@@ -715,4 +726,36 @@ textarea {
 textarea:focus {
 	background: #f4f4f4;
 	height: 250px;
+}
+
+.contact-buttons {
+	padding-top: 4%;
+	padding-right: 3%;
+}
+
+a.button3 {
+	font-size: 25px;
+	font-weight: 300;
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 1em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 300;
+	color: #FFFFFF;
+	background-color: #c3c3c3;
+	text-align: center;
+	transition: all 0.2s;
+}
+
+a.button3:hover {
+	background-color: #787878;
+}
+
+@media all and (max-width:30em) {
+	a.button3 {
+		display: block;
+		margin: 0.2em auto;
+	}
 }

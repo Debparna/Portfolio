@@ -1,9 +1,25 @@
+.casestudy__hero--bundl {
+	background: white;
+}
+
+.casestudy__hero,
+.casestudy__hero--bundl,
+.casestudy__hero--cruzhacks,
+.casestudy__hero--ic,
+.casestudy__hero--t4g,
+.casestudy__hero--wam {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
-
 
 
 /*
@@ -165,7 +181,6 @@ header li:hover ul {
 
 article,
 aside,
-
 header,
 nav,
 section {
@@ -407,7 +422,6 @@ embed,
 fieldset,
 figcaption,
 figure,
-
 form,
 h1,
 h2,
@@ -415,7 +429,6 @@ h3,
 h4,
 h5,
 h6,
-
 hgroup,
 html,
 i,
@@ -472,8 +485,6 @@ aside,
 details,
 figcaption,
 figure,
-
-
 hgroup,
 menu,
 nav,
@@ -703,8 +714,6 @@ ol>li:before {
 	top: -3px
 }
 
-
-
 .nav-link,
 nav ul li a {
 	font-family: proxima-nova, Helvetica, sans-serif;
@@ -729,7 +738,7 @@ nav>a:last-child {
 
 nav .back,
 nav .back--about {
-	color: #fff;
+	color: black;
 	display: flex;
 	align-items: center
 }
@@ -1094,7 +1103,6 @@ nav ul li a {
 
 .casestudy {
 	width: 680px;
-	margin: 75px auto
 }
 
 @media (max-width:640px) {
@@ -1171,12 +1179,20 @@ nav ul li a {
 	margin: 0 auto 45px
 }
 
+.mainImg {
+	display: block;
+	margin: 0 auto 45px
+}
+
 .casestudy figure img {
 	margin: 0 auto
 }
 
 @media (max-width:640px) {
 	.casestudy figure img {
+		width: 100%
+	}
+	.mainImg {
 		width: 100%
 	}
 }
@@ -1303,19 +1319,7 @@ nav ul li a {
 }
 
 .casestudy__hero--bundl {
-	background: linear-gradient(160deg, #7295fc, #625fff)
-}
-
-.casestudy__hero--cruzhacks {
-	background: linear-gradient(160deg, #ac89ff, #625fff)
-}
-
-.casestudy__hero--wam {
-	background: #748fff
-}
-
-.casestudy__hero--t4g {
-	background: linear-gradient(160deg, #fbdf3c, #fff3a8)
+	background: white;
 }
 
 .casestudy__card {
@@ -1391,7 +1395,6 @@ nav ul li a {
 }
 
 footer {
-	
 	background-color: #fcfcfc;
 	padding: 28px 70px;
 	font-size: .75em;
@@ -1409,8 +1412,6 @@ footer {
 		text-align: right
 	}
 }
-
-
 
 .imgcenter {
 	display: flex;
@@ -1505,6 +1506,9 @@ footer {
 @media (max-width:640px) {
 	.deactivated {
 		margin-bottom: 30px
+	}
+	.mainImg {
+		width: 100px;
 	}
 }
 
@@ -1616,8 +1620,6 @@ footer {
 .dark .read-reset {
 	border: 1px solid #4a4a4a
 }
-
-
 
 .none {
 	display: none;

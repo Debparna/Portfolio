@@ -15,6 +15,15 @@
 	justify-content: center;
 }
 
+.flexRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.hImg {
+	padding-top: 10%;
+}
+
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
@@ -211,11 +220,6 @@ hr {
 pre {
 	font-family: monospace, monospace;
 	font-size: 1em
-}
-
-a {
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects
 }
 
 abbr[title] {
@@ -1167,7 +1171,13 @@ nav ul li a {
 }
 
 .casestudy a {
-	text-decoration: underline
+	text-decoration: none;
+	font-weight: 300;
+}
+
+.casestudy a:hover {
+	color: #22B6B2;
+	font-weight: 200;
 }
 
 .casestudy sup a {
@@ -1292,7 +1302,7 @@ nav ul li a {
 .casestudy__hero--cruzhacks,
 .casestudy__hero--t4g,
 .casestudy__hero--wam {
-	height: 70vh;
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1805,5 +1815,32 @@ footer {
 	}
 	to {
 		opacity: .4
+	}
+}
+
+a.button3 {
+	width: 21%;
+	height: 9%;
+	font-weight: 200;
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 300;
+	color: #FFFFFF;
+	background-color: #c3c3c3;
+	text-align: center;
+	transition: all 0.2s;
+}
+
+a.button3:hover {
+	background-color: #787878;
+}
+
+@media all and (max-width:30em) {
+	a.button3 {
+		display: block;
+		margin: 0.2em auto;
 	}
 }
